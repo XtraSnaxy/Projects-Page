@@ -133,3 +133,6 @@ p a:active,
 img {
   border-radius: 5px;
 }
+.boxes p {
+  padding: 10px;
+}
