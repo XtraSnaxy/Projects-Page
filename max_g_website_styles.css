@@ -1,0 +1,135 @@
+.header {
+  text-align: center;
+  padding: 10px;
+  background: #035096;
+  color: white;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr minmax(720px, 80%) 1fr;
+  padding: 20px;
+  grid-template-areas:
+    "....... aboutMe ......."
+    "....... bio ......."
+    "....... video ......";
+}
+.wrapper1 {
+  display: grid;
+  grid-template-columns: 1fr minmax(720px, 100%) 1fr;
+  padding: 10px;
+  grid-template-areas:
+    "....... aboutMe ......."
+    "....... bio ......."
+    "....... video ......";
+}
+.boxes {
+  display: grid;
+  grid-gap: 10px;
+  padding: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "leftBox midBox rightBox";
+}
+.bio {
+  grid-area: bio;
+}
+.aboutMe,
+.projects {
+  grid-area: aboutMe;
+  background: #74bcec;
+  border-radius: 5px;
+  margin-top: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+.vidIntroduction {
+  margin-top: 10px;
+  text-align: center;
+  padding: 10px;
+  grid-area: video;
+  background: #ffd3d7;
+  border-radius: 5px;
+}
+.fontForDoc {
+  font-family: "Montserrat", sans-serif;
+}
+#bioTitle {
+  font-weight: bolder;
+  text-align: left;
+  font-size: 1.2em;
+}
+.bio p {
+  margin-top: 3px;
+}
+#profilePic {
+  float: left;
+  margin-right: 1em;
+  border-radius: 5px;
+  width: 200px;
+  height: 230px;
+  object-fit: cover;
+  object-position: 20% 10%;
+}
+.vidIntroText {
+  font-size: 30px;
+}
+
+p a,
+p a:visited,
+.rightBox a,
+.rightBox a:visited,
+.midBox a,
+.midBox a:visited {
+  text-decoration: none;
+  color: #035096;
+}
+p a:hover,
+.boxes a:hover {
+  color: palevioletred;
+}
+p a:active,
+.boxes a:active {
+  color: #b5485d;
+}
+#bioP {
+  margin-top: 10px;
+}
+.leftBox a,
+.leftBox a:visited {
+  text-decoration: none;
+  color: white;
+}
+.leftBox a:hover {
+  color: palevioletred;
+}
+.leftBox a:active {
+  color: #b5485d;
+}
+.leftBox {
+  padding: 10px;
+  text-align: center;
+  grid-area: leftBox;
+  background: #035096;
+  border-radius: 5px;
+  color: white;
+}
+.midBox {
+  grid-area: midBox;
+  padding: 10px;
+  text-align: center;
+  background: #ffd3d7;
+  border-radius: 5px;
+  color: black;
+}
+.rightBox {
+  padding: 10px;
+  grid-area: rightBox;
+  text-align: center;
+  background: #74bcec;
+  border-radius: 5px;
+  color: black;
+}
+img {
+  border-radius: 5px;
+}
